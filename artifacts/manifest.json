@@ -1,0 +1,45 @@
+{
+  "author": "Ainur Ali",
+  "seed": 42,
+  "champion": "catboost_base",
+  "selection_rule": "Highest policy-split average precision; test never used for selection",
+  "primary_metric": "average_precision",
+  "split_protocol": "60% train/CV; 10% calibration; 10% policy; 20% test",
+  "best_catboost_params": {
+    "depth": 4,
+    "learning_rate": 0.056941083846378505,
+    "l2_leaf_reg": 4.775384543356069,
+    "iterations": 350
+  },
+  "catboost_cv_ap": 0.6769863821930046,
+  "best_logistic_C": 0.1,
+  "cv_folds": 3,
+  "optuna_trials": 16,
+  "bootstrap_repetitions": 400,
+  "default_campaign_fraction": 0.1,
+  "bundle_sha256": "3ac06b99612278a4694c6f7b06d8f54add5a14b090b43f3ea78a27ee20c1bf98",
+  "source_sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91",
+  "source_code_sha256": {
+    "src/churn_lab/__init__.py": "4091a879feb6e1903dd08129df4bd5d1e2bbe15381b4681687ed469e6f63d748",
+    "src/churn_lab/cli.py": "994641791c54c42249b1f78e2bdd7267924ad16d69ee9d8e608ead399e8d4645",
+    "src/churn_lab/data.py": "594085dbd73fed5d055efa2193beb389949fa123f6a00bec6183b7e658c6e1cf",
+    "src/churn_lab/metrics.py": "91c4ca85de05b270807756da07e0e535dbc122ab761e43a5149d3e6fd183c6f2",
+    "src/churn_lab/modeling.py": "edfb630ac21768e4434f4624a5f37cd0097bdd590b3e843f14b53e49aa68db4e",
+    "src/churn_lab/reporting.py": "20490a9252b9d6aacdcb39fab3d002a3316900fdab621e501daef81a49622410",
+    "sql/features.sql": "9696ace839074788b53d84d31a9f40d90f7dbacd3ed8193065dadcac0e3d6f6f",
+    "sql/segments.sql": "310ba68d071f51eddf7c7f04d3384f60d4c364873e6e7e422bef46444d88bb35"
+  },
+  "packages": {
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "duckdb": "2.0.0",
+    "optuna": "5.0.0",
+    "streamlit": "1.67.0",
+    "plotly": "7.1.0"
+  },
+  "python": "3.12.14",
+  "platform": "Linux",
+  "runtime_seconds": 78.38
+}

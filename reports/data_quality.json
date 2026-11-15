@@ -1,0 +1,51 @@
+{
+  "rows": 7043,
+  "source_sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91",
+  "unique_customers": 7043,
+  "missing_total_charges": 11,
+  "features": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "addon_count",
+    "total_charges_missing",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "tenure_band",
+    "contract_internet"
+  ],
+  "excluded_demographics": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents"
+  ],
+  "splits": {
+    "calibration": {
+      "rows": 704,
+      "churn_rate": 0.265625
+    },
+    "policy": {
+      "rows": 705,
+      "churn_rate": 0.265248
+    },
+    "test": {
+      "rows": 1409,
+      "churn_rate": 0.265436
+    },
+    "train": {
+      "rows": 4225,
+      "churn_rate": 0.265325
+    }
+  }
+}
