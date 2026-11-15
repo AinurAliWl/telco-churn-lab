@@ -14,6 +14,7 @@
 - Ruff lint and formatting checks passed.
 - Generated report figures were rendered and visually inspected.
 - Windows-compatible wheels were found for all pinned runtime dependencies. This is not a Windows execution test.
+- GitHub Actions passed on Ubuntu and Windows with Python 3.12, including pytest, Ruff lint and formatting checks.
 
 ## Application checks
 
@@ -25,7 +26,6 @@ These checks exercise application logic and widgets. They do not verify desktop 
 
 - Native Windows execution, including the complete local installation.
 - Desktop/mobile visual review and end-to-end browser download/upload checks. Headless Chromium could not start in the validation environment; no successful browser layout test is claimed.
-- GitHub Actions execution after pushing the repository. The workflow is configured for Ubuntu and Windows / Python 3.12 but has not run on GitHub.
 - A native Jupyter-kernel session. Notebook code execution and output generation were verified through IPython; the kernel transport could not start in the validation environment.
 
 No external telecom validation, production deployment or real retention experiment has been performed.
